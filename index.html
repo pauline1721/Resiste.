@@ -17,7 +17,7 @@
     .page {
       max-width: 430px;
       margin: auto;
-      padding: 28px 22px 40px;
+      padding: 24px 22px 40px;
       min-height: 100vh;
       box-sizing: border-box;
       border: 2px solid #b99355;
@@ -25,16 +25,23 @@
     }
 
     .logo-img {
-      width: 90px;
-      margin: 0 auto 12px;
+      width: 75px;
+      margin: 0 auto 2px;
       display: block;
+    }
+
+    .unis-text {
+      font-size: 17px;
+      letter-spacing: 8px;
+      color: #9b6f32;
+      margin: 0 0 18px;
     }
 
     h1 {
       font-size: 32px;
       color: #9b6f32;
       font-weight: normal;
-      margin: 18px 0 8px;
+      margin: 14px 0 8px;
     }
 
     .heart {
@@ -55,11 +62,35 @@
       margin: 28px 0 15px;
     }
 
+    .decor-zone {
+      position: relative;
+      margin: 22px auto;
+      width: 100%;
+    }
+
+    .feuille {
+      position: absolute;
+      width: 80px;
+      top: 65px;
+      opacity: 0.85;
+      z-index: 1;
+    }
+
+    .feuille-gauche {
+      left: -12px;
+    }
+
+    .feuille-droite {
+      right: -12px;
+    }
+
     .turntable {
+      position: relative;
+      z-index: 2;
       width: 88%;
       max-width: 330px;
-      margin: 22px auto;
       display: block;
+      margin: 0 auto;
     }
 
     .listen {
@@ -113,11 +144,10 @@
 <body>
   <div class="page">
 
-    <img class="logo-img" src="logoUNIS-transparent.png" alt="Logo UNIS">
-    <div style="font-size:24px; letter-spacing:10px; color:#9b6f32; margin-top:-8px; margin-bottom:18px;">
-   . U N I S .
-</div>
-    <h1>Tu es revenue vers toi.</h1>
+    <img class="logo-img" src="logoUNIS.png" alt="Logo UNIS">
+    <div class="unis-text">• UNIS •</div>
+
+    <h1>Tu es revenu(e) vers toi.</h1>
 
     <div class="heart">♡</div>
 
@@ -135,7 +165,11 @@
       laisse cette musique t’accompagner.
     </p>
 
-    <img class="turntable" src="tourne_disque_mymetoo_grand.png" alt="Tourne-disque UNIS">
+    <div class="decor-zone">
+      <img class="feuille feuille-gauche" src="feuille-gauche.png" alt="">
+      <img class="turntable" src="tourne_disque_mymetoo_grand.png" alt="Tourne-disque UNIS">
+      <img class="feuille feuille-droite" src="feuille-droite.png" alt="">
+    </div>
 
     <div class="listen">
       Quand tu seras prête…<br>
@@ -144,16 +178,16 @@
 
     <div class="video">
       <iframe
-        src="https://www.youtube.com/embed/I5mlAZkibgw"
+        src="https://www.youtube.com/embed/I5m1AZkibgw"
         title="Résiste"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen>
       </iframe>
     </div>
- 
+
     <div class="song">
-      Résiste — Véronique Sanson
+      Résiste — France Gall
     </div>
 
     <div class="footer">
